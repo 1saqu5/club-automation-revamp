@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Home, Users, BookOpen, Lightbulb } from "lucide-react";
+import { Menu, X, Home, Users, BookOpen, Lightbulb, TrendingUp } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +19,7 @@ const Navigation = () => {
   const navLinks = [
     { to: "/", label: "Home", icon: Home },
     { to: "/comunidade", label: "Comunidade", icon: Users },
+    { to: "/resultados", label: "Resultados", icon: TrendingUp },
   ];
 
   return (
