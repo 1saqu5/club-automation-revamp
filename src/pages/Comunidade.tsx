@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -76,6 +77,7 @@ const articles: Article[] = [
 const categories = ["Todos", "Produtos", "Assistente Virtual", "Segurança", "Economia"];
 
 const Comunidade = () => {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
@@ -182,6 +184,7 @@ const Comunidade = () => {
                     <Button
                       variant="ghost"
                       className="w-full justify-between group/btn"
+                      onClick={() => navigate(`/artigo/${article.id}`)}
                     >
                       Continue Lendo
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
