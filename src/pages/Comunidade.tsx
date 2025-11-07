@@ -21,7 +21,7 @@ const articles: Article[] = [
     id: 1,
     title: "Interruptores e Tomadas Inteligentes: O Futuro da Automação Residencial",
     excerpt:
-      "A automação residencial tem conquistado cada vez mais espaço nas casas modernas. Descubra como interruptores inteligentes podem transformar sua casa.",
+      "Os interruptores e tomadas inteligentes representam a evolução definitiva no controle residencial. Compatíveis com WiFi, Zigbee e Z-Wave, esses dispositivos transformam qualquer ambiente em um espaço conectado e eficiente. Controle luzes, aparelhos e equipamentos através de comandos de voz via Alexa, Google Assistant ou Siri, ou pelo smartphone de qualquer lugar do mundo. Crie rotinas personalizadas: acorde com as luzes acendendo gradualmente, programe o desligamento automático de aparelhos esquecidos, e economize até 35% na conta de energia com agendamentos inteligentes. A instalação é simples - muitos modelos substituem interruptores convencionais sem necessidade de neutro, ideais para retrofit. Recursos avançados incluem monitoramento de consumo em tempo real, detecção de sobrecarga, temporizadores, dimmer integrado, e controles de cena que ajustam múltiplos dispositivos simultaneamente. Perfeitos para segurança: simule presença durante viagens, receba alertas de acionamento, e integre com sistemas de alarme. Compatíveis com automações via IFTTT, HomeKit, SmartThings e Home Assistant. Invista no futuro: conforto, economia e sustentabilidade em um único dispositivo.",
     category: "Produtos",
     date: "3 de agosto de 2023",
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800",
