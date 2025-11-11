@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Zap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-smart-home.jpg";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -56,6 +58,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
+              onClick={() => navigate("/demonstracao")}
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm px-8 py-6 text-lg rounded-xl"
             >
               <Play className="mr-2 w-5 h-5" />
