@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Home, Users, BookOpen, Lightbulb, TrendingUp, ShoppingCart } from "lucide-react";
+import { Menu, X, Home, Users, BookOpen, Lightbulb, TrendingUp, ShoppingCart, Wrench } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,6 +21,7 @@ const Navigation = () => {
     { to: "/comunidade", label: "Comunidade", icon: Users },
     { to: "/resultados", label: "Resultados", icon: TrendingUp },
     { to: "/curadoria", label: "Curadoria", icon: ShoppingCart },
+    { to: "/projeto-macgyver", label: "Projeto MacGyver", icon: Wrench, hoverColor: "macgyver" },
   ];
 
   return (
@@ -47,26 +48,32 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`text-sm font-medium transition-colors relative group ${
-                  location.pathname === link.to
-                    ? "text-primary"
-                    : "text-foreground hover:text-primary"
-                }`}
-              >
-                {link.label}
-                <span
-                  className={`absolute -bottom-1 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300 ${
+            {navLinks.map((link) => {
+              const isMacgyver = (link as any).hoverColor === "macgyver";
+              const activeColor = isMacgyver ? "text-red-700" : "text-primary";
+              const hoverColor = isMacgyver ? "hover:text-red-700" : "hover:text-primary";
+              const barColor = isMacgyver ? "bg-red-700" : "bg-primary";
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`text-sm font-medium transition-colors relative group ${
                     location.pathname === link.to
-                      ? "scale-x-100"
-                      : "scale-x-0 group-hover:scale-x-100"
+                      ? activeColor
+                      : `text-foreground ${hoverColor}`
                   }`}
-                />
-              </Link>
-            ))}
+                >
+                  {link.label}
+                  <span
+                    className={`absolute -bottom-1 left-0 w-full h-0.5 ${barColor} transform origin-left transition-transform duration-300 ${
+                      location.pathname === link.to
+                        ? "scale-x-100"
+                        : "scale-x-0 group-hover:scale-x-100"
+                    }`}
+                  />
+                </Link>
+              );
+            })}
             <Button
               size="lg"
               className="bg-gradient-primary hover:opacity-90 transition-opacity"
@@ -96,6 +103,7 @@ const Navigation = () => {
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => {
                 const Icon = link.icon;
+                const isMacgyver = (link as any).hoverColor === "macgyver";
                 return (
                   <Link
                     key={link.to}
@@ -103,8 +111,12 @@ const Navigation = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                       location.pathname === link.to
-                        ? "bg-accent text-primary font-medium"
-                        : "text-foreground hover:bg-accent"
+                        ? isMacgyver
+                          ? "bg-red-50 text-red-700 font-medium"
+                          : "bg-accent text-primary font-medium"
+                        : isMacgyver
+                          ? "text-foreground hover:bg-red-50 hover:text-red-700"
+                          : "text-foreground hover:bg-accent"
                     }`}
                   >
                     <Icon className="w-5 h-5" />
