@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto MacGyver - Projetos personalizados de automação residencial DIY com artigos e vídeos.">
+  <title>Projeto MacGyver - Club Automação</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🏠</div>
+        <span class="nav-logo-text">Club Automação</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="comunidade.html" class="nav-link">Comunidade</a>
+        <a href="resultados.html" class="nav-link">Resultados</a>
+        <a href="curadoria.html" class="nav-link">Curadoria</a>
+        <a href="projeto-macgyver.html" class="nav-link macgyver active">Projeto MacGyver</a>
+        <a href="#" class="btn btn-primary">💡 Criar Projeto</a>
+      </div>
+      <button class="nav-mobile-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="nav-mobile-menu">
+      <a href="index.html">🏠 Home</a>
+      <a href="comunidade.html">👥 Comunidade</a>
+      <a href="resultados.html">📈 Resultados</a>
+      <a href="curadoria.html">🛒 Curadoria</a>
+      <a href="projeto-macgyver.html">🔧 Projeto MacGyver</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero red" style="padding-top:6rem;">
+    <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(220,38,38,0.3),transparent 60%);"></div>
+    <div class="content">
+      <div class="badge" style="background:rgba(255,255,255,0.1);backdrop-filter:blur(4px);color:hsl(0,80%,80%);border:1px solid hsla(0,70%,50%,0.3);margin-bottom:1.5rem;">🔧 Projetos DIY</div>
+      <h1>Projeto <span style="display:block;color:hsl(0,70%,75%);margin-top:0.5rem;">MacGyver</span></h1>
+      <p style="color:hsla(0,80%,90%,0.8);">Projetos personalizados de automação residencial criados por nós. Acompanhe cada etapa da construção com artigos detalhados e vídeos passo a passo.</p>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <div class="container">
+    <div class="search-filter-bar">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <span class="icon">🔍</span>
+          <input type="text" placeholder="Buscar projetos..." data-search class="red">
+        </div>
+        <div class="filter-tags">
+          <button class="filter-tag red active" data-category="Todos">Todos</button>
+          <button class="filter-tag red" data-category="Eletrônica">Eletrônica</button>
+          <button class="filter-tag red" data-category="Arduino">Arduino</button>
+          <button class="filter-tag red" data-category="Raspberry Pi">Raspberry Pi</button>
+          <button class="filter-tag red" data-category="Segurança">Segurança</button>
+          <button class="filter-tag red" data-category="IoT">IoT</button>
+          <button class="filter-tag red" data-category="Motor">Motor</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <section class="container">
+    <div class="projects-grid" data-filterable>
+
+      <div class="project-card" data-category="Eletrônica" data-searchable="Painel de Controle DIY com ESP32 criamos um painel touchscreen completo">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" alt="ESP32 Painel" loading="lazy">
+          <div class="overlay"></div>
+          <div class="play-btn"><button class="play-btn-circle" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">▶</button></div>
+          <div class="badge-top"><span class="badge badge-green">Concluído</span></div>
+          <div class="badge-bottom"><span class="badge badge-red">Eletrônica</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span>🕐 45 min</span><span>20 Fev 2026</span></div>
+          <h3>Painel de Controle DIY com ESP32</h3>
+          <p>Criamos um painel touchscreen completo usando ESP32 para controlar luzes, temperatura e câmeras da casa inteira.</p>
+          <a href="#" class="btn btn-red-outline" style="width:100%;">Ver Projeto Completo →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Arduino" data-searchable="Sensor de Presença Inteligente Caseiro montamos um sensor de presença com Arduino">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Sensor Arduino" loading="lazy">
+          <div class="overlay"></div>
+          <div class="play-btn"><button class="play-btn-circle" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">▶</button></div>
+          <div class="badge-top"><span class="badge badge-green">Concluído</span></div>
+          <div class="badge-bottom"><span class="badge badge-red">Arduino</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span>🕐 32 min</span><span>15 Fev 2026</span></div>
+          <h3>Sensor de Presença Inteligente Caseiro</h3>
+          <p>Montamos um sensor de presença com Arduino que envia notificações e ativa rotinas automaticamente.</p>
+          <a href="#" class="btn btn-red-outline" style="width:100%;">Ver Projeto Completo →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Raspberry Pi" data-searchable="Irrigação Automática com Raspberry Pi sistema de irrigação inteligente">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop" alt="Irrigação" loading="lazy">
+          <div class="overlay"></div>
+          <div class="play-btn"><button class="play-btn-circle" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">▶</button></div>
+          <div class="badge-top"><span class="badge badge-amber">Em Andamento</span></div>
+          <div class="badge-bottom"><span class="badge badge-red">Raspberry Pi</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span>🕐 55 min</span><span>10 Fev 2026</span></div>
+          <h3>Irrigação Automática com Raspberry Pi</h3>
+          <p>Sistema de irrigação inteligente que monitora umidade do solo e rega automaticamente suas plantas.</p>
+          <a href="#" class="btn btn-red-outline" style="width:100%;">Ver Projeto Completo →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Segurança" data-searchable="Fechadura Eletrônica com RFID projeto completo de uma fechadura">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Fechadura RFID" loading="lazy">
+          <div class="overlay"></div>
+          <div class="play-btn"><button class="play-btn-circle" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">▶</button></div>
+          <div class="badge-top"><span class="badge badge-green">Concluído</span></div>
+          <div class="badge-bottom"><span class="badge badge-red">Segurança</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span>🕐 40 min</span><span>05 Fev 2026</span></div>
+          <h3>Fechadura Eletrônica com RFID</h3>
+          <p>Projeto completo de uma fechadura controlada por cartão RFID e app no celular com ESP8266.</p>
+          <a href="#" class="btn btn-red-outline" style="width:100%;">Ver Projeto Completo →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="IoT" data-searchable="Estação Meteorológica Wi-Fi construímos uma estação que mede temperatura">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop" alt="Estação Meteo" loading="lazy">
+          <div class="overlay"></div>
+          <div class="play-btn"><button class="play-btn-circle" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">▶</button></div>
+          <div class="badge-top"><span class="badge badge-amber">Em Andamento</span></div>
+          <div class="badge-bottom"><span class="badge badge-red">IoT</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span>🕐 38 min</span><span>28 Jan 2026</span></div>
+          <h3>Estação Meteorológica Wi-Fi</h3>
+          <p>Construímos uma estação que mede temperatura, umidade, pressão e envia dados para um dashboard online.</p>
+          <a href="#" class="btn btn-red-outline" style="width:100%;">Ver Projeto Completo →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Motor" data-searchable="Controle de Cortinas Motorizado motor controlado por voz">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&h=400&fit=crop" alt="Cortinas Motor" loading="lazy">
+          <div class="overlay"></div>
+          <div class="play-btn"><button class="play-btn-circle" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">▶</button></div>
+          <div class="badge-top"><span class="badge badge-green">Concluído</span></div>
+          <div class="badge-bottom"><span class="badge badge-red">Motor</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span>🕐 28 min</span><span>20 Jan 2026</span></div>
+          <h3>Controle de Cortinas Motorizado</h3>
+          <p>Motor controlado por voz e app para abrir e fechar cortinas em horários programados.</p>
+          <a href="#" class="btn btn-red-outline" style="width:100%;">Ver Projeto Completo →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🏠</div>
+            <span class="footer-logo-text">Club Automação</span>
+          </div>
+          <p>Transformando casas em ambientes inteligentes com tecnologia de ponta e soluções personalizadas.</p>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="curadoria.html">Curadoria</a></li>
+            <li><a href="projeto-macgyver.html">Projeto MacGyver</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-contact">
+            <li>📧 contato@clubautomacao.com</li>
+            <li>📺 YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Club Automação. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
