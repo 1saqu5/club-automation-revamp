@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comunidade Club Automação - Artigos, guias e dicas para transformar sua casa em um ambiente inteligente.">
+  <title>Comunidade - Club Automação</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🏠</div>
+        <span class="nav-logo-text">Club Automação</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="comunidade.html" class="nav-link active">Comunidade</a>
+        <a href="resultados.html" class="nav-link">Resultados</a>
+        <a href="curadoria.html" class="nav-link">Curadoria</a>
+        <a href="projeto-macgyver.html" class="nav-link macgyver">Projeto MacGyver</a>
+        <a href="#" class="btn btn-primary">💡 Criar Projeto</a>
+      </div>
+      <button class="nav-mobile-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="nav-mobile-menu">
+      <a href="index.html">🏠 Home</a>
+      <a href="comunidade.html">👥 Comunidade</a>
+      <a href="resultados.html">📈 Resultados</a>
+      <a href="curadoria.html">🛒 Curadoria</a>
+      <a href="projeto-macgyver.html">🔧 Projeto MacGyver</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero blue">
+    <div class="bg-pattern"></div>
+    <div class="content">
+      <h1>Comunidade</h1>
+      <p>Artigos, guias e dicas para transformar sua casa em um ambiente inteligente</p>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="search-section">
+    <div class="container">
+      <div class="inner">
+        <div class="search-input-wrap">
+          <span class="icon">🔍</span>
+          <input type="text" placeholder="Buscar artigos..." data-search style="padding:1rem 1rem 1rem 2.5rem;font-size:1.125rem;border-width:2px;">
+        </div>
+        <div class="category-tags">
+          <button class="category-tag active" data-category="Todos">Todos</button>
+          <button class="category-tag" data-category="Produtos">Produtos</button>
+          <button class="category-tag" data-category="Assistente Virtual">Assistente Virtual</button>
+          <button class="category-tag" data-category="Segurança">Segurança</button>
+          <button class="category-tag" data-category="Economia">Economia</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="articles-section">
+    <div class="container">
+      <div class="articles-grid" data-filterable>
+
+        <div class="article-card hover-lift" data-category="Produtos" data-searchable="Interruptores e Tomadas Inteligentes O Futuro da Automação Residencial">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800" alt="Interruptores Inteligentes">
+            <span class="badge" style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:white;">Produtos</span>
+          </div>
+          <div class="body">
+            <div class="date">📅 3 de agosto de 2023</div>
+            <h3>Interruptores e Tomadas Inteligentes: O Futuro da Automação Residencial</h3>
+            <p class="excerpt">Os interruptores e tomadas inteligentes representam a evolução definitiva no controle residencial.</p>
+            <button class="read-more" onclick="window.location.href='#'">Continue Lendo <span>→</span></button>
+          </div>
+        </div>
+
+        <div class="article-card hover-lift" data-category="Assistente Virtual" data-searchable="Integração de Assistente Virtual na Automação Residencial simplificando a vida">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=800" alt="Assistente Virtual">
+            <span class="badge" style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:white;">Assistente Virtual</span>
+          </div>
+          <div class="body">
+            <div class="date">📅 2 de agosto de 2023</div>
+            <h3>Integração de Assistente Virtual na Automação Residencial</h3>
+            <p class="excerpt">Simplificando a Vida com Comandos de Voz. A integração de assistentes virtuais como Alexa revoluciona o controle da sua casa.</p>
+            <button class="read-more" onclick="window.location.href='#'">Continue Lendo <span>→</span></button>
+          </div>
+        </div>
+
+        <div class="article-card hover-lift" data-category="Produtos" data-searchable="Guia para Iniciantes em Automação Residencial transformando sua casa">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Guia Iniciantes">
+            <span class="badge" style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:white;">Produtos</span>
+          </div>
+          <div class="body">
+            <div class="date">📅 28 de julho de 2023</div>
+            <h3>Guia para Iniciantes em Automação Residencial</h3>
+            <p class="excerpt">Transformando sua Casa em um Ambiente Inteligente. A automação residencial tem revolucionado a forma como interagimos com nossas casas.</p>
+            <button class="read-more" onclick="window.location.href='#'">Continue Lendo <span>→</span></button>
+          </div>
+        </div>
+
+        <div class="article-card hover-lift" data-category="Produtos" data-searchable="Top 10 Dispositivos Inteligentes para uma Casa Conectada">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=800" alt="Top 10 Dispositivos">
+            <span class="badge" style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:white;">Produtos</span>
+          </div>
+          <div class="body">
+            <div class="date">📅 25 de julho de 2023</div>
+            <h3>Top 10 Dispositivos Inteligentes para uma Casa Conectada</h3>
+            <p class="excerpt">Simplificando sua Vida Através da Automação Residencial. Conheça os melhores dispositivos para automatizar cada cômodo.</p>
+            <button class="read-more" onclick="window.location.href='#'">Continue Lendo <span>→</span></button>
+          </div>
+        </div>
+
+        <div class="article-card hover-lift" data-category="Segurança" data-searchable="Segurança Inteligente Proteja sua Casa com Tecnologia câmeras sensores">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Segurança">
+            <span class="badge" style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:white;">Segurança</span>
+          </div>
+          <div class="body">
+            <div class="date">📅 20 de julho de 2023</div>
+            <h3>Segurança Inteligente: Proteja sua Casa com Tecnologia</h3>
+            <p class="excerpt">Câmeras, sensores e sistemas de alarme conectados que você pode monitorar de qualquer lugar.</p>
+            <button class="read-more" onclick="window.location.href='#'">Continue Lendo <span>→</span></button>
+          </div>
+        </div>
+
+        <div class="article-card hover-lift" data-category="Economia" data-searchable="Economize Energia com Automação Inteligente reduzir conta de luz">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800" alt="Economia">
+            <span class="badge" style="position:absolute;top:1rem;left:1rem;background:var(--primary);color:white;">Economia</span>
+          </div>
+          <div class="body">
+            <div class="date">📅 15 de julho de 2023</div>
+            <h3>Economize Energia com Automação Inteligente</h3>
+            <p class="excerpt">Descubra como a automação pode reduzir sua conta de luz em até 30%. Iluminação e climatização eficientes.</p>
+            <button class="read-more" onclick="window.location.href='#'">Continue Lendo <span>→</span></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🏠</div>
+            <span class="footer-logo-text">Club Automação</span>
+          </div>
+          <p>Transformando casas em ambientes inteligentes com tecnologia de ponta e soluções personalizadas.</p>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="curadoria.html">Curadoria</a></li>
+            <li><a href="projeto-macgyver.html">Projeto MacGyver</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-contact">
+            <li>📧 contato@clubautomacao.com</li>
+            <li>📺 YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Club Automação. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
